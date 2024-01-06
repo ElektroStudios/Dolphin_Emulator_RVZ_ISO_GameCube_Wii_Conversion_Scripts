@@ -83,4 +83,9 @@ $sendConvertedFilesToRecycleBin = $true
 --------------------------
 
 # Additional Commentaries
-I'm not a PowerShell enthusiast, it's just a quick tool that I use to satisfy some programmatic needs, so the source code of the scripts in this repository are ugly (poorly structured code, many repeated lines, using .NET classes rather than pure Powershell, etc), but hey, it works, so I shared them as is.
+Run the script files with administrator privileges. You can safely remove this line from the script files if it causes any issues to you:
+```
+try { Set-ExecutionPolicy -ExecutionPolicy "Unrestricted" -Scope "Process" } catch { }
+```
+
+I'm not a PowerShell enthusiast, it's just a quick tool that I use to satisfy some programmatic needs, so the source code of the scripts in this repository are ugly and some parts of the code a mess (poorly structured code, many repeated lines, resorting to .NET classes usage rather than pure Powershell and pipes, etc), but hey, it works as expected, so I shared them as is.
