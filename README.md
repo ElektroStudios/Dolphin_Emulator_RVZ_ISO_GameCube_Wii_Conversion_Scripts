@@ -31,10 +31,10 @@ These script files will use DolphinTool on background:
 ## 📝 Requirements
 
  - **DolphinTool** standalone executable, which is included in **Dolphin** emulator package:
-   https://dolphin-emu.org/download/
+   - https://dolphin-emu.org/download/
 
  - **Microsoft PowerShell** (which is integrated in Microsoft Windows OS), or the cross-platform **PowerShell Core**:
-    https://github.com/PowerShell/PowerShell
+   - https://github.com/PowerShell/PowerShell
 
  - At least one GameCube ISO or RVZ file to use any of these script files, obviously.
 
