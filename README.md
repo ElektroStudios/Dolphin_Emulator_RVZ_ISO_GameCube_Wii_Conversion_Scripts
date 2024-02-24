@@ -12,7 +12,7 @@ windows-application
 windows-applications 
  -->
 
-# RVZ <> ISO Utility Script Files for [Dolphin Emulator](https://dolphin-emu.org)
+# RVZ <> ISO Utility Conversion Script Files for [Dolphin Emulator](https://dolphin-emu.org)
 
 ![](/Images/Gamecube.jpg)
 
