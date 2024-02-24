@@ -44,7 +44,7 @@ Download the latest release by clicking [here](https://github.com/ElektroStudios
 
 ### Converting ISO to RVJ
 
-1. Download the `ISO to RVZ.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
+1. Download the `Convert_ISO_to_RVZ.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
 
 2. Open the script file in notepad and edit as you like the values of the Variables section at the very top of the script. The default values are:
 
@@ -73,7 +73,7 @@ $dictionarySize    = 32mb
 
 ### Converting RVZ to ISO
 
-1. Download the `RVZ to ISO.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
+1. Download the `Extract_RVZ_to_ISO.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
 
 2. Open the script file in notepad and edit as you like the values of the Variables section at the very top of the script. The default values are:
 
