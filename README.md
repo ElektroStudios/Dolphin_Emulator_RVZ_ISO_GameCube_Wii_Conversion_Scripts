@@ -20,7 +20,7 @@ windows-applications
 
 ## 👋 Introduction
 
-In this repository you will find utility scripts made in PowerShell to automate the conversion between GameCube console ISO files to RVZ file format, and vice versa.
+In this repository you will find utility scripts made in PowerShell to automate the conversion between GameCube and Wii's console ISO files to RVZ file format, and vice versa.
 
 RVZ format is only supported by Dolphin emulator. It is the modern, optimal, lossless format of choice:
  - https://emulation.gametechwiki.com/index.php/Save_disk_space_for_ISOs#RVZ_.28Modern_Dolphin_format.29_-_GC.2FWii
@@ -36,7 +36,7 @@ These script files will use DolphinTool on background:
  - **Microsoft PowerShell** (which is integrated in Microsoft Windows OS), or the cross-platform **PowerShell Core**:
    - https://github.com/PowerShell/PowerShell
 
- - At least one GameCube ISO or RVZ file to use any of these script files, obviously.
+ - At least one GameCube or Wii ISO or RVZ file to use any of these script files, obviously.
 
 ## 🤖 Getting Started
 
