@@ -38,13 +38,13 @@ function Show-WelcomeScreen {
     Clear-Host
     Write-Host ""
     Write-Host " $($host.ui.RawUI.WindowTitle)"
-    Write-Host " +================================================+"
-    Write-Host " |                                                |"
-    Write-Host " | This script will search for GameCube's ISO     |"
-    Write-Host " | files in the current working directory, and    |"
-    Write-Host " | use DolphinTool to convert them to RVZ format. |"
-    Write-Host " |                                                |"
-    Write-Host " +================================================+"
+    Write-Host " +=================================================+"
+    Write-Host " |                                                 |"
+    Write-Host " | This script will search for GameCube and Wii    |"
+    Write-Host " | ISO files in the current working directory, and |"
+    Write-Host " | use DolphinTool to convert them to RVZ format.  |"
+    Write-Host " |                                                 |"
+    Write-Host " +=================================================+"
     Write-Host ""
     Write-Host " Script Settings         " -ForegroundColor DarkGray
     Write-Host " ========================" -ForegroundColor DarkGray
