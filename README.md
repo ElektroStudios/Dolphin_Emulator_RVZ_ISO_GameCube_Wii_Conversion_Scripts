@@ -51,23 +51,25 @@ Download the latest release by clicking [here](https://github.com/ElektroStudios
 ```
 $dolphinToolFullPath = "$PSScriptRoot\DolphinTool.exe"
 $inputDirectoryPath = "$PSScriptRoot"
+$outputDirectoryPath = ""
 $recursiveSearch = $false
 $overwriteConfirm = $true
 $sendConvertedFilesToRecycleBin = $true
 $compressionFormat = "lzma2" # none, zstd, bzip, lzma, lzma2
 $compressionLevel  = 9       # zstd: 1~22, bzip/lzma/lzma2: 1~9
-$dictionarySize    = 32mb
+$blockSize         = 32mb
 ```
 | Variable Name   |      Meaning      |
 |----------|-------------|
 | $dolphinToolFullPath |  The DolphinTool.exe full file path (it can be a relative path) |
-| $inputDirectoryPath  |  The directory where to search for ISO files to convert them |
-| $recursiveSearch  |  Flag to indicate recursive search for ISO files. |
-| $overwriteConfirm  |  Flag to confirm overwrite for existing RVZ files |
-| $sendConvertedFilesToRecycleBin  | Flag to send to recycle bin successfully converted ISO files. If you set this value to $false, converted ISO files will be kept. |
+| $inputDirectoryPath  |  The directory where to search for ISO files to convert them to RVZ format. |
+| $outputDirectoryPath |  The directory where to write the converted RVZ files. |
+| $recursiveSearch     |  Flag to indicate whether to perform a recursive search for ISO files. |
+| $overwriteConfirm    |  Flag to confirm overwrite for any existing RVZ file in the output directory. |
+| $sendConvertedFilesToRecycleBin  | Flag to send successfully converted ISO files to recycle bin. If you set this value to $false, converted ISO files will be kept. |
 | $compressionFormat  |  Compression format |
 | $compressionLevel   |  Compression level |
-| $dictionarySize     |  Block size used for compression |
+| $blockSize          |  Block size used for compression |
 
 3. Run the script file, and wait until the conversion operation completes.
 
@@ -80,17 +82,19 @@ $dictionarySize    = 32mb
 ```
 $dolphinToolFullPath = "$PSScriptRoot\DolphinTool.exe"
 $inputDirectoryPath = "$PSScriptRoot"
+$outputDirectoryPath = ""
 $recursiveSearch = $false
 $overwriteConfirm = $true
 $sendConvertedFilesToRecycleBin = $true
 ```
 | Variable Name   |      Meaning      |
 |----------|-------------|
-| $dolphinToolFullPath |  The DolphinTool.exe full file path (it can be a relative path) |
-| $inputDirectoryPath  |  The directory where to search for RVZ files to convert them |
-| $recursiveSearch  |  Flag to indicate recursive search for RVZ files. |
-| $overwriteConfirm  |  Flag to confirm overwrite for existing ISO files |
-| $sendConvertedFilesToRecycleBin  | Flag to send to recycle bin successfully converted RVZ files. If you set this value to $false, converted files will be kept. |
+| $dolphinToolFullPath |  The DolphinTool.exe full file path (it can be a relative path). |
+| $inputDirectoryPath  |  The directory where to search for RVZ files to extract them to ISO format. |
+| $outputDirectoryPath |  The directory where to write the extracted ISO files. |
+| $recursiveSearch     |  Flag to indicate whether to perform a recursive search for RVZ files. |
+| $overwriteConfirm    |  Flag to confirm overwrite for any existing ISO file in the output directory. |
+| $sendConvertedFilesToRecycleBin  | Flag to send successfully converted RVZ files to recycle bin. If you set this value to $false, RVZ files will be kept. |
 
 3. Run the script file, and wait until the conversion operation completes.
 
