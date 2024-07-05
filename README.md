@@ -42,7 +42,7 @@ These script files will use DolphinTool on background:
 
 Download the latest release by clicking [here](https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/releases/latest),
 
-### Converting ISO to RVJ
+### Converting ISO to RVZ
 
 1. Download the `Convert_ISO_to_RVZ.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
 
