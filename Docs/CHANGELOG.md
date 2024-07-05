@@ -13,7 +13,7 @@
   • Batch-script files have been reworked from scratch, implementing many of the features mentioned above for the PowerShell script files.
 
 ## v1.1 🔄
-Minor improvements.
+Still in version 1.0, no changes were made, I just updated the description text shown when running the PowerShell scripts to include a Wii mention, clarifying this way that the scripts will work for Wii ISO files too.
 
 ## v1.0 🔄
 Initial Release.
