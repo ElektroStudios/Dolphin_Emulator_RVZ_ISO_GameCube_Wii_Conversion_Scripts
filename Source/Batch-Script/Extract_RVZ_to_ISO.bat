@@ -24,7 +24,7 @@ MKDIR "%OutputDirectoryPath%" 1>NUL 2>&1 || (
 	)
 )
 
-SET "RecursiveParams=/R %%# IN (*.rvz)"
+SET "RecursiveParams=/R "%InputDirectoryPath%" %%# IN ("*.rvz")"
 SET "NonRecursiveParams=%%# IN ("%InputDirectoryPath%\*.rvz")"
 
 If /I "%DoRecursiveRVZSearch%" EQU "True" (

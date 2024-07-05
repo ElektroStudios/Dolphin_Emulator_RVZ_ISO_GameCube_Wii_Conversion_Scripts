@@ -32,7 +32,7 @@ MKDIR "%OutputDirectoryPath%" 1>NUL 2>&1 || (
 	)
 )
 
-SET "RecursiveParams=/R %%# IN (*.iso)"
+SET "RecursiveParams=/R "%InputDirectoryPath%" %%# IN ("*.iso")"
 SET "NonRecursiveParams=%%# IN ("%InputDirectoryPath%\*.iso")"
 
 If /I "%DoRecursiveRVZSearch%" EQU "True" (
