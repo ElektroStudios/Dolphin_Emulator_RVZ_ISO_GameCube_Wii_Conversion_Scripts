@@ -44,6 +44,16 @@ Download the latest release by clicking [here](https://github.com/ElektroStudios
 
 ### Converting ISO to RVZ
 
+⚠️ **IMPORTANT — BEFORE USING:**  
+
+> Please note that using block size values larger than 128 KB (131072 bytes) may cause emulation issues
+> depending on the capabilities of the machine you use to emulate the ROMs. On a PC, a block size of 32 MB
+> (33554432 bytes) should be generally safe and work well without any negative effects.
+>
+> However, the script files are provided **"as-is"**, so use them at your own risk.
+> Make sure to review the settings before running the scripts, back up your ROMs, and test the compressed
+> ROMs before deleting the original ones.
+
 1. Download the `Convert_ISO_to_RVZ.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
 
 2. Open the script file in notepad and edit as you like the values of the Variables section at the very top of the script. The default values are:

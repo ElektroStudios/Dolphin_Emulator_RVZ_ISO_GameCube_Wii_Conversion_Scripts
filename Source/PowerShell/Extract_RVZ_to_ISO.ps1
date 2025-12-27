@@ -1,4 +1,4 @@
-# Script Version 1.2
+$ScriptVersion = "1.3"
 
 <#
 ===========================================================================================
@@ -10,10 +10,10 @@
 
 $dolphinToolFullPath = "$PSScriptRoot\DolphinTool.exe"
 
-$inputDirectoryPath = "$PSScriptRoot"
-$recursiveSearch = $false # If $true, performs a recursive RVZ file search in the input directory path.
+$sourceDirectoryPath = "$PSScriptRoot"
+$recursiveSearch = $false # If $true, performs a recursive RVZ file search in the source directory path.
 
-$outputDirectoryPath = "" # Leave empty to use the same directory as input RVZ files.
+$outputDirectoryPath = "" # Leave empty to use the same directory as source RVZ files.
 
 $overwriteConfirm = $true # If $true, will prompt the user to overwrite any existing RVZ file in order to continue.
 $sendConvertedFilesToRecycleBin = $false # If $true, successfully converted RVZ files will be sent to recycle bin, otherwise, the files will be kept.
@@ -29,7 +29,8 @@ $sendConvertedFilesToRecycleBin = $false # If $true, successfully converted RVZ 
 function Show-WelcomeScreen {
     Clear-Host
     Write-Host ""
-    Write-Host "$($host.ui.RawUI.WindowTitle)"
+    Write-Host " $($host.ui.RawUI.WindowTitle) | By ElektroStudios (https://git.new/WuQUx1w)"
+    Write-Host ""
     Write-Host "+=================================================+"
     Write-Host "|                                                 |"
     Write-Host "| This script will search for GameCube and Wii    |"
@@ -40,9 +41,9 @@ function Show-WelcomeScreen {
     Write-Host ""
     Write-Host "Script Settings         " -ForegroundColor DarkGray
     Write-Host "========================" -ForegroundColor DarkGray
-    Write-Host "Input Directory Path....: $inputDirectoryPath" -ForegroundColor DarkGray
-    Write-Host "Output Directory Path...: $(if ([string]::IsNullOrWhiteSpace($outputDirectoryPath)) { "Not specified. (Same directory as RVZ files)" } else { $outputDirectoryPath.Replace($inputDirectoryPath, ".") })" -ForegroundColor DarkGray
-    Write-Host "DolphinTool File Path...: $($dolphinToolFullPath.Replace($inputDirectoryPath, "."))" -ForegroundColor DarkGray
+    Write-Host "Source Directory Path....: $sourceDirectoryPath" -ForegroundColor DarkGray
+    Write-Host "Output Directory Path...: $(if ([string]::IsNullOrWhiteSpace($outputDirectoryPath)) { "Not specified. (Same directory as RVZ files)" } else { $outputDirectoryPath.Replace($sourceDirectoryPath, ".") })" -ForegroundColor DarkGray
+    Write-Host "DolphinTool File Path...: $($dolphinToolFullPath.Replace($sourceDirectoryPath, "."))" -ForegroundColor DarkGray
     Write-Host "Recursive File Search...: $recursiveSearch" -ForegroundColor DarkGray
     Write-Host "Confirm Overwrite ISO...: $overwriteConfirm" -ForegroundColor DarkGray
     Write-Host "Recycle Converted Files.: $sendConvertedFilesToRecycleBin" -ForegroundColor DarkGray
@@ -65,8 +66,8 @@ function Confirm-Continue {
 
 function Validate-Settings {
     
-    if (-not (Test-Path -LiteralPath $inputDirectoryPath -PathType Container)) {
-        Write-Host "Input directory does not exists!" -BackgroundColor Black -ForegroundColor Red
+    if (-not (Test-Path -LiteralPath $sourceDirectoryPath -PathType Container)) {
+        Write-Host "ERROR: Source directory path does not exist: $($sourceDirectoryPath)" -BackgroundColor Black -ForegroundColor Red
         Write-Host ""
         Write-Host "Press any key to exit..."
         $key = $Host.UI.RawUI.ReadKey("NoEcho, IncludeKeyDown")
@@ -74,7 +75,7 @@ function Validate-Settings {
     }
 
     if (-not (Test-Path -LiteralPath $dolphinToolFullPath -PathType Leaf)) {
-        Write-Host "DolphinTool file does not exists!" -BackgroundColor Black -ForegroundColor Red
+        Write-Host "ERROR: DolphinTool executable file path does not exist: $($dolphinToolFullPath)" -BackgroundColor Black -ForegroundColor Red
         Write-Host ""
         Write-Host "Press any key to exit..."
         $key = $Host.UI.RawUI.ReadKey("NoEcho, IncludeKeyDown")
@@ -89,17 +90,17 @@ function Convert-Files {
 
     $rvzFiles = $null
     if ($recursiveSearch) {
-        $rvzFiles = Get-ChildItem -LiteralPath $inputDirectoryPath -Filter "*.*" -Recurse -File -ErrorAction Stop |
+        $rvzFiles = Get-ChildItem -LiteralPath $sourceDirectoryPath -Filter "*.*" -Recurse -File -ErrorAction Stop |
                     Where-Object { $_.Extension -ieq '.rvz' } |
                     ForEach-Object { New-Object System.IO.FileInfo -ArgumentList $_.FullName }
     } else {
-        $rvzFiles = Get-ChildItem -LiteralPath $inputDirectoryPath -Filter "*.*" -File -ErrorAction Stop |
+        $rvzFiles = Get-ChildItem -LiteralPath $sourceDirectoryPath -Filter "*.*" -File -ErrorAction Stop |
                     Where-Object { $_.Extension -ieq '.rvz' } |
                     ForEach-Object { New-Object System.IO.FileInfo -ArgumentList $_.FullName }
     }
 
     if ($rvzFiles.Count -eq 0) {
-        Write-Warning "No RVZ files found in input directory path."
+        Write-Warning "No RVZ files were found in source directory path."
     }
 
     foreach ($rvzFile in $rvzFiles) {    
@@ -113,7 +114,7 @@ function Convert-Files {
         }
 
         if (-not $rvzFile.Exists) {
-            Write-Host "Input RVZ file path does not exist: $($rvzFile.FullName)" -BackgroundColor Black -ForegroundColor Red
+            Write-Host "Source RVZ file path does not exist: $($rvzFile.FullName)" -BackgroundColor Black -ForegroundColor Red
             Write-Host ""
             Write-Host "Press any key to exit..."
             $key = $Host.UI.RawUI.ReadKey("NoEcho, IncludeKeyDown")
@@ -206,7 +207,7 @@ function Convert-Files {
                     # Write-Host $stdOutputVerify -ForegroundColor DarkGray
                     Write-Host "Verification successful." -ForegroundColor DarkGreen
                     if ($sendConvertedFilesToRecycleBin) {
-                        Write-Host "Deleting input RVZ file..." -ForegroundColor DarkGray
+                        Write-Host "Deleting source RVZ file..." -ForegroundColor DarkGray
                         $null = [Microsoft.VisualBasic.FileIO.FileSystem]::DeleteFile($rvzFile.FullName, 'OnlyErrorDialogs', 'SendToRecycleBin')
                         Write-Host "Deletion completed." -ForegroundColor DarkGray
                     }
@@ -263,7 +264,7 @@ function Show-GoodbyeScreen {
 ===========================================================================================
 #>
 
-[System.Console]::Title = "Extract RVZ to ISO - by ElektroStudios"
+[System.Console]::Title = "Dolphin's RVZ to ISO extractor v$ScriptVersion"
 #[System.Console]::SetWindowSize(146, 27)
 [CultureInfo]::CurrentUICulture = "en-US"
 
