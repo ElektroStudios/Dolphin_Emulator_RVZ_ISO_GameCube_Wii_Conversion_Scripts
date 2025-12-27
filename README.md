@@ -15,7 +15,6 @@ windows-applications
 # RVZ <> ISO Utility Conversion Script Files for [Dolphin Emulator](https://dolphin-emu.org)
 
 ![](/Images/Gamecube.jpg) ![](/Images/Wii.png)
-
 ------------------
 
 ## 👋 Introduction
@@ -54,7 +53,7 @@ Download the latest release by clicking [here](https://github.com/ElektroStudios
 > Make sure to review the settings before running the scripts, back up your ROMs, and test the compressed
 > ROMs before deleting the original ones.
 
-1. Download the `Convert_ISO_to_RVZ.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
+1. Download the `Convert_ISO_to_RVZ.ps1` (or simpler version `Convert_ISO_to_RVZ.bat`) script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
 
 2. Open the script file in notepad and edit as you like the values of the Variables section at the very top of the script. The default values are:
 
@@ -83,9 +82,15 @@ $blockSize         = 32mb
 
 3. Run the script file, and wait until the conversion operation completes.
 
+## 📸 Screenshots
+
+![](/Images/Convert_ISO_to_RVZ.bat.png)
+
+![](/Images/Convert_ISO_to_RVZ.ps1.png)
+
 ### Converting RVZ to ISO
 
-1. Download the `Extract_RVZ_to_ISO.ps1` script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
+1. Download the `Extract_RVZ_to_ISO.ps1` (or simpler version `Extract_RVZ_to_ISO.bat`) script file from this repository (make click on the file in GitHub to view the code and copy it, and also you can find a button to download the raw file).
 
 2. Open the script file in notepad and edit as you like the values of the Variables section at the very top of the script. The default values are:
 
@@ -107,6 +112,12 @@ $sendConvertedFilesToRecycleBin = $true
 | $sendConvertedFilesToRecycleBin  | Flag to send successfully converted RVZ files to recycle bin. If you set this value to $false, RVZ files will be kept. |
 
 3. Run the script file, and wait until the conversion operation completes.
+
+## 📸 Screenshots
+
+![](/Images/Extract_RVZ_to_ISO.bat.png)
+
+![](/Images/Extract_RVZ_to_ISO.ps1.png)
 
 ### Additional Commentaries
 Run the script files with administrator privileges. You can safely remove this line from the script files if it causes any issues to you:
