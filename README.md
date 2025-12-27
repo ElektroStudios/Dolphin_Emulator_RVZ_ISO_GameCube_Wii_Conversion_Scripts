@@ -29,7 +29,7 @@ These script files will use DolphinTool on background:
 
 ## 📝 Requirements
 
- - **DolphinTool** standalone executable, which is included in **Dolphin** emulator package:
+ - **DolphinTool.exe** standalone executable file, which is included in **Dolphin** emulator package:
    - https://dolphin-emu.org/download/
 
  - **Microsoft PowerShell** (which is integrated in Microsoft Windows OS), or the cross-platform **PowerShell Core**:
