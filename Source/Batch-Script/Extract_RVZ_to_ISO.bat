@@ -1,6 +1,6 @@
 @ECHO OFF
 REM CHCP 1252 1>NULL
-SET "ScriptVersion=1.3"
+SET "ScriptVersion=1.3.1"
 SET "WindowTitle=Dolphin's RVZ to ISO extractor v%ScriptVersion%"
 TITLE %WindowTitle%
 
@@ -36,6 +36,18 @@ MKDIR "%OutputDirectoryPath%" 1>NUL 2>&1 || (
 		PAUSE
 		EXIt /B 1
 	)
+)
+
+IF NOT EXIST "%SourceDirectoryPath%" (
+	ECHO:Source directory path does not exist: "%SourceDirectoryPath%"
+	PAUSE
+	EXIt /B 1
+)
+
+IF NOT EXIST "%~dp0DolphinTool.exe%" (
+	ECHO:DolphinTool.exe not found in directory: "%~dp0"
+	PAUSE
+	EXIt /B 1
 )
 
 SET "RecursiveParams=/R "%SourceDirectoryPath%" %%# IN ("*.rvz")"
