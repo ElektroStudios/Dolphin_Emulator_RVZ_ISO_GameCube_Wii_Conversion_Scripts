@@ -36,7 +36,7 @@ windows-applications
     <a href="https://ci.appveyor.com/project/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts"><img src="https://ci.appveyor.com/api/projects/status/github/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts?svg=true" alt="AppVeyor CI"></a>
     <a href="https://sonarcloud.io/summary/new_code?id=ElektroStudios_Dolphin_Emulator_RVZ_Utility_Scripts"><img src="https://sonarcloud.io/api/project_badges/measure?project=ElektroStudios_Dolphin_Emulator_RVZ_Utility_Scripts&metric=alert_status" alt="SonarCloud Quality Gate"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/releases/latest"><img src="https://img.shields.io/github/v/release/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Latest Release"></a>
-    <a href="https://learn.microsoft.com/en-us/dotnet/visual-basic/"><img src="https://img.shields.io/badge/language-VB.NET-purple.svg?logo=visualbasic" alt="Language"></a>
+    <a href="https://learn.microsoft.com/en-us/dotnet/visual-basic/"><img src="https://img.shields.io/badge/language-PowerShell-purple.svg?logo=visualbasic" alt="Language"></a>
     <a href="https://learn.microsoft.com/en-us/windows/apps/"><img src="https://img.shields.io/badge/platform-Windows-lightgray.svg" alt="Platform"></a>
     <a href="License.md"><img src="https://img.shields.io/github/license/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="License"></a>
   <br>
@@ -200,7 +200,7 @@ The authors and copyright holders assume no liability for any direct, indirect, 
 
 Furthermore, this project operates entirely independently. The utilization of any third-party libraries or components within this software does not imply any affiliation with, or endorsement or approval by, their respective original authors.
 
-This Work has no affiliation, approval or endorsement by the author(s) of [Dolphin Emulator](https://dolphin-emu.org/).
+This work has no affiliation, approval or endorsement by the authors of [Dolphin Emulator](https://dolphin-emu.org/).
 
 By using this software, you agree to indemnify and hold harmless the authors from any claims, damages, or liabilities arising from your use or misuse of it.
 
