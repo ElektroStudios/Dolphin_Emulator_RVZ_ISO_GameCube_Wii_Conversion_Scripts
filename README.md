@@ -34,12 +34,11 @@ windows-applications
   <br>
   <br>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/releases/latest"><img src="https://img.shields.io/github/v/release/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Latest Release"></a>
-    <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/Languages-PowerShell-012456.svg?logo=powershell&logoColor=white&label=language%201" alt="PowerShell"></a>
-    <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands"><img src="https://img.shields.io/badge/-Batch-1A5276.svg?label=language%202" alt="Batch"></a>
+    <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/language-PowerShell-purple.svg?logo=powershell&logoColor=white&label=language%201" alt="PowerShell"></a>
+    <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands"><img src="https://img.shields.io/badge/-Batch-black.svg?label=language%202" alt="Batch"></a>
     <a href="https://learn.microsoft.com/en-us/windows/apps/"><img src="https://img.shields.io/badge/platform-Windows-lightgray.svg" alt="Platform"></a>
     <a href="License.md"><img src="https://img.shields.io/github/license/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="License"></a>
   <br>
-    <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/archive/refs/heads/main.zip"><img src="https://img.shields.io/github/repo-size/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Repo size"></a>
     <a href="https://somsubhra.github.io/github-release-stats/?username=ElektroStudios&repository=Dolphin_Emulator_RVZ_Utility_Scripts"><img src="https://img.shields.io/github/downloads/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/total.svg?label=total%20downloads" alt="Total Downloads"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/commits/main"><img src="https://img.shields.io/github/last-commit/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Last commit"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/pulls"><img src="https://img.shields.io/github/issues-pr/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Pull Requests"></a>
