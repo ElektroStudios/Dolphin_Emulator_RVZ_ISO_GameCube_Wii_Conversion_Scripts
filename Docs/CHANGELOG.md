@@ -1,4 +1,4 @@
-# RVZ <> ISO Utility Conversion Script Files for [Dolphin Emulator](https://dolphin-emu.org) - Change Log 📋
+﻿# RVZ <> ISO Utility Conversion Script Files for [Dolphin Emulator](https://dolphin-emu.org) - Change Log 📋
 
 ## v1.3 *(current)* 🆕
 README.md and script files have been modified to warn users about possible emulation issues when using larger block sizes than 128 KB.
