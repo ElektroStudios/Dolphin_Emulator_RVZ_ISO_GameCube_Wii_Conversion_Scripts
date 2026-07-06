@@ -34,8 +34,8 @@ windows-applications
   <br>
   <br>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/releases/latest"><img src="https://img.shields.io/github/v/release/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Latest Release"></a>
-    <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/Languages-PowerShell-012456.svg?logo=powershell&logoColor=white&label=language 1" alt="PowerShell"></a>
-    <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands"><img src="https://img.shields.io/badge/-Batch-1A5276.svg?label=language 2" alt="Batch"></a>
+    <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/Languages-PowerShell-012456.svg?logo=powershell&logoColor=white&label=language%201" alt="PowerShell"></a>
+    <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands"><img src="https://img.shields.io/badge/-Batch-1A5276.svg?label=language%202" alt="Batch"></a>
     <a href="https://learn.microsoft.com/en-us/windows/apps/"><img src="https://img.shields.io/badge/platform-Windows-lightgray.svg" alt="Platform"></a>
     <a href="License.md"><img src="https://img.shields.io/github/license/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="License"></a>
   <br>
