@@ -38,6 +38,7 @@ windows-applications
     <a href="https://learn.microsoft.com/en-us/windows/apps/"><img src="https://img.shields.io/badge/platform-Windows-lightgray.svg" alt="Platform"></a>
     <a href="LICENSE"><img src="https://img.shields.io/github/license/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="License"></a>
   <br>
+    <a href="https://api.github.com/repos/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/zipball"><img src="https://img.shields.io/github/repo-size/ElektroStudios/Dummy-Drive-Mirror-Maker" alt="Repo size"></a>
     <a href="https://somsubhra.github.io/github-release-stats/?username=ElektroStudios&repository=Dolphin_Emulator_RVZ_Utility_Scripts"><img src="https://img.shields.io/github/downloads/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/total.svg?label=total%20downloads" alt="Total Downloads"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/commits"><img src="https://img.shields.io/github/last-commit/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Last commit"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/pulls"><img src="https://img.shields.io/github/issues-pr/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Pull Requests"></a>
