@@ -36,10 +36,10 @@ windows-applications
     <a href="https://learn.microsoft.com/en-us/powershell/"><img src="https://img.shields.io/badge/language-PowerShell-purple.svg?logo=powershell&logoColor=white&label=language%201" alt="PowerShell"></a>
     <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands"><img src="https://img.shields.io/badge/-Batch--Script-black.svg?label=language%202" alt="Batch"></a>
     <a href="https://learn.microsoft.com/en-us/windows/apps/"><img src="https://img.shields.io/badge/platform-Windows-lightgray.svg" alt="Platform"></a>
-    <a href="License.md"><img src="https://img.shields.io/github/license/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="License"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="License"></a>
   <br>
     <a href="https://somsubhra.github.io/github-release-stats/?username=ElektroStudios&repository=Dolphin_Emulator_RVZ_Utility_Scripts"><img src="https://img.shields.io/github/downloads/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/total.svg?label=total%20downloads" alt="Total Downloads"></a>
-    <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/commits/main"><img src="https://img.shields.io/github/last-commit/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Last commit"></a>
+    <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/commits"><img src="https://img.shields.io/github/last-commit/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Last commit"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/pulls"><img src="https://img.shields.io/github/issues-pr/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts" alt="Pull Requests"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/issues?q=is%3Aissue+is%3Aopen"><img src="https://img.shields.io/github/issues/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts?color=blue" alt="Open Issues"></a><a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts?label=&color=28a745" alt="Closed Issues"></a>
     <a href="https://github.com/ElektroStudios/Dolphin_Emulator_RVZ_Utility_Scripts/pulse"><img src="https://img.shields.io/badge/maintained-yes-green.svg" alt="Maintenance"></a>
